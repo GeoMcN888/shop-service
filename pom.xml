@@ -12,6 +12,7 @@ http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<groupId>com.ait.store</groupId>
 	<artifactId>shop-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>shop-service</name>
 	<description>grocery store app</description>
 	<properties>

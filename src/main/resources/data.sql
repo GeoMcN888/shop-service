@@ -1,3 +1,3 @@
-insert into shops (shop_id, name, address, country, phone_number, year_founded, picture, type)  values (1,'Supervalu', 'Knocklyon, Dublin', 'Ireland', 012342354, '1994-1-8', 'dewre', 'grocery');
-insert into shops (shop_id, name, address, country, phone_number, year_founded, picture, type)  values (2,'Centra', 'Old Bawn, Tallaght, Dublin', 'Ireland', 012342654, '1994-1-8', 'Local Centra', 'grocery');
-insert into shops (shop_id, name, address, country, phone_number, year_founded, picture, type)  values (3,'Toms', 'Firhouse, Dublin', 'Ireland', 012343209, '1994-1-8', 'Local Grocery Store', 'grocery');
+insert into shops (shop_id, name, address, country, phone_number, year_founded, picture, type, shopValue)  values (1,'Supervalu', 'Knocklyon, Dublin', 'Ireland', 012342354, '1994-1-8', 'dewre', 'grocery', 1500000);
+insert into shops (shop_id, name, address, country, phone_number, year_founded, picture, type, shopValue)  values (2,'Centra', 'Old Bawn, Tallaght, Dublin', 'Ireland', 012342654, '1994-1-8', 'Local Centra', 'grocery', 450000);
+insert into shops (shop_id, name, address, country, phone_number, year_founded, picture, type, shopValue)  values (3,'Toms', 'Firhouse, Dublin', 'Ireland', 012343209, '1994-1-8', 'Local Grocery Store', 'grocery', 50000);

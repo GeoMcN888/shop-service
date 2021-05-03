@@ -1,6 +1,7 @@
 package com.ait.store.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -36,14 +37,19 @@ public class Shop {
     private long phoneNumber;
 
     @Column(name="year_founded", columnDefinition = "DATE")
+    @Nullable
     private LocalDate yearFounded;
 
     @Column
     private String picture;
 
     @Column
+    @Nullable
     @Enumerated(EnumType.STRING)
     private Type type;
+
+    @Column
+    private int shopValue;
 
 
     @JsonIgnore
@@ -61,7 +67,7 @@ public class Shop {
     public Shop() {
     }
 
-    public Shop(long shopId, String name, String address, String country, long phoneNumber, LocalDate yearFounded, String picture, Type type) {
+    public Shop(long shopId, String name, String address, String country, long phoneNumber, LocalDate yearFounded, String picture, Type type, int shopValue) {
         this.shopId = shopId;
         this.name = name;
         this.address = address;
@@ -70,6 +76,15 @@ public class Shop {
         this.yearFounded = yearFounded;
         this.picture = picture;
         this.type = type;
+        this.shopValue = shopValue;
+    }
+
+    public int getShopValue() {
+        return shopValue;
+    }
+
+    public void setShopValue(int shopValue) {
+        this.shopValue = shopValue;
     }
 
     public Type getType() {
@@ -156,6 +171,11 @@ public class Shop {
                 ", picture='" + picture + '\'' +
                 ", shopProducts=" + shopProducts +
                 ", type=" + type +
+                ", shopValue=" + shopValue +
                 '}';
+    }
+
+    public int CombinedValue(int shopV, int shopValue){
+        return shopV + shopValue;
     }
 }

@@ -12,12 +12,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @SpringBootTest
 public class ShopTest {
     private Shop shop;
-    private Shop shop2;
 
         @BeforeEach
         public void setup(){
             shop = new Shop(1,"Supervalu", "Knocklyon, Dublin", "Ireland", 012342354, null, "dewre", null, 1500000);
-            shop2 = new Shop(2,"Centra", "Firhouse, Dublin", "Ireland", 012334432, null, "dewre", null, 10000);
         }
 
         @Test

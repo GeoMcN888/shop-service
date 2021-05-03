@@ -43,12 +43,12 @@ public class Shop {
     @Column
     private String picture;
 
-    @Column
+
     @Nullable
     @Enumerated(EnumType.STRING)
     private Type type;
 
-    @Column
+    @Column(name="shop_value")
     private int shopValue;
 
 

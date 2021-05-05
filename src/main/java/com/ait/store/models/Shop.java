@@ -178,4 +178,5 @@ public class Shop {
     public int CombinedValue(int shopV, int shopValue){
         return shopV + shopValue;
     }
+    public int ValueDifference(int shopV, int shopValue) {return shopV - shopValue;}
 }

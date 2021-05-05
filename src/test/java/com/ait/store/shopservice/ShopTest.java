@@ -25,5 +25,12 @@ public class ShopTest {
                 "Regular multiplication should work");
         }
 
+        @Test
+        @DisplayName("Simple subtraction should work")
+        public void testValueDifference() {
+             assertEquals(1490000, shop.ValueDifference(1500000,10000),
+                "Regular subtraction should work");
+        }
+
 
 }
